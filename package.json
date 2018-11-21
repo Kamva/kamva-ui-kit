@@ -1,14 +1,14 @@
 {
-  "name": "@kamva/kamva-ui-kit",
-  "version": "0.0.1",
+  "name": "@kamva/ui-kit",
+  "version": "0.1.5",
   "description": "## Installation ``` $ npm install --save-dev kamva-ui-kit ```",
-  "main": "src/index.tsx",
+  "main": "dist/index.js",
   "scripts": {
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watchAll",
-    "dev": "NODE_ENV=development parcel index.html",
-    "build": "NODE_ENV=production parcel build src/index.tsx",
-    "docs": "NODE_ENV=production parcel build --public-url . index.html --out-dir docs",
+    "dev": "NODE_ENV=development parcel src/index.html",
+    "build": "NODE_ENV=production parcel build src/index.tsx && cp index.d.ts dist",
+    "docs": "NODE_ENV=production parcel build --public-url . src/index.html --out-dir docs",
     "lint": "tslint --project ."
   },
   "repository": {
