@@ -1,6 +1,18 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { Provider } from "./index";
+import { Button } from "./index";
 import "./style/style.css";
+import { colorPallet } from "./utils/style";
 
-render(<Provider />, document.getElementById("root"));
+const Layout = () => {
+  return (
+    <div className="container">
+      <div className="buttons">
+        <h2>Buttons</h2>
+        <Button color={colorPallet.third}>شروع با کاموا</Button>
+      </div>
+    </div>
+  );
+};
+
+render(<Layout />, document.getElementById("root"));

@@ -1,7 +1,9 @@
 import * as React from "react";
 import styled, { withTheme } from "styled-components";
+import { colorPallet } from "../../utils/style";
+import { ResetButton } from "./resetButton";
 
-export let PrimaryButton = styled("button")`
+export const PrimaryButton = styled(ResetButton)`
   position: relative;
   text-align: center;
   border-radius: 2.1875rem;
@@ -16,13 +18,13 @@ export let PrimaryButton = styled("button")`
   font-weight: 900;
   background-color: ${props =>
     !props.color
-      ? `rgba(${props.theme.pallet.primary}, 1)`
+      ? `rgba(${colorPallet.primary}, 1)`
       : `rgba(${props.color}, 1)`};
 
   box-shadow: 0px 15px 47px
     ${props =>
       !props.color
-        ? `rgba(${props.theme.pallet.primary}, 0.64)`
+        ? `rgba(${colorPallet.primary}, 0.64)`
         : `rgba(${props.color}, 0.30)`};
 
   &:before {
@@ -48,5 +50,3 @@ export let PrimaryButton = styled("button")`
     }
   }
 `;
-
-PrimaryButton = withTheme(PrimaryButton);
