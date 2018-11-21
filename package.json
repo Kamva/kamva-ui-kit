@@ -1,7 +1,7 @@
 {
-  "name": "kamva-ui-kit",
+  "name": "@kamva/kamva-ui-kit",
   "version": "0.0.1",
-  "description": "",
+  "description": "## Installation ``` $ npm install --save-dev kamva-ui-kit ```",
   "main": "src/index.tsx",
   "scripts": {
     "test": "NODE_ENV=test jest",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Kamva/kamva-ui-kit.git"
+    "url": "git+ssh://git@github.com/Kamva/kamva-ui-kit.git"
   },
   "husky": {
     "hooks": {
@@ -65,5 +65,9 @@
       "json",
       "node"
     ]
+  },
+  "homepage": "https://github.com/Kamva/kamva-ui-kit#readme",
+  "directories": {
+    "doc": "docs"
   }
 }
