@@ -10,6 +10,16 @@
 
 @font-face {
     font-family: Vazir;
+    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.eot');
+    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.woff2') format('woff2'),
+    url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.woff') format('woff'),
+    url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazir;
     src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Black.eot');
     src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Black.eot?#iefix') format('embedded-opentype'),
     url('https://kamva-assets.ir/fonts/vazir/Vazir-Black.woff2') format('woff2'),

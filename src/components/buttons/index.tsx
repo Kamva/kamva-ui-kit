@@ -2,6 +2,7 @@ import * as React from "react";
 import { PrimaryButton } from "./primary";
 import { colorPallet } from "../../utils/style";
 import { Secondary } from "./secondary";
+import {Outline} from "./outline";
 
 interface IButtonProps {
   secondary?: boolean;
@@ -17,7 +18,7 @@ export const Button: React.SFC<IButtonProps> = props => {
   if (secondary) {
     return <Secondary {...prop}>{children}</Secondary>;
   } else if (outline) {
-    return <p>outline</p>;
+    return <Outline {...prop}>{children}</Outline>;
   }
   return <PrimaryButton {...prop}>{children}</PrimaryButton>;
 };

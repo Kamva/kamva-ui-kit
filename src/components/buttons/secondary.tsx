@@ -4,6 +4,7 @@ import { PrimaryButton } from "./primary";
 import { colorPallet } from "../../utils/style";
 
 export const Secondary = styled(PrimaryButton)`
+	font-weight: 500;
   box-shadow: 0px 4px 6px
     ${props =>
       !props.color
