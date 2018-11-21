@@ -17,7 +17,7 @@ const theme = {
 export const Provider = () => (
   <React.Fragment>
     <ThemeProvider theme={theme}>
-      <Button>Hello</Button>
+      <Button color={colorPallet.third}>شروع با کاموا</Button>
     </ThemeProvider>
     <GlobalStyle />
   </React.Fragment>

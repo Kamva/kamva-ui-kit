@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 	button {
+		font-family: Vazir;
 		appearance: none;
 		outline: none;
 	  border: none;

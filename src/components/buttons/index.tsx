@@ -1,11 +1,13 @@
 import * as React from "react";
 import { PrimaryButton } from "./primary";
+import { colorPallet } from "../../index";
 
 interface IButtonProps {
   secondary?: boolean;
   outline?: boolean;
   children?: Element | string;
   onClick?: () => any;
+  color?: colorPallet;
 }
 
 export const Button: React.SFC<IButtonProps> = props => {
