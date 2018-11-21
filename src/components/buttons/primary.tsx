@@ -7,7 +7,6 @@ export const PrimaryButton = styled(ResetButton)`
   position: relative;
   text-align: center;
   border-radius: 2.1875rem;
-  margin: 0.2rem 1rem;
   padding: 0.5rem 1rem;
   transition: all 0.5s ease;
   overflow: hidden;

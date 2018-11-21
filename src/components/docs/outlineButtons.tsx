@@ -5,7 +5,7 @@ import { colorPallet } from "../../utils/style";
 export const OutlineButtons = () => {
 	return (
 		<div className="buttons">
-			<div className="primary">
+			<div className="outline">
 				<h3>Outline</h3>
 				<div>
 					<Button outline>شروع با کاموا</Button>

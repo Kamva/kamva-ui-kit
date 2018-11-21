@@ -8,10 +8,13 @@ import { OutlineButtons } from "./components/docs/outlineButtons";
 const Layout = () => {
   return (
     <div className="container">
-      <h2>Buttons</h2>
-      <PrimaryButtons />
-      <SecondaryButtons />
-      <OutlineButtons />
+	    <h1>Kamva UI Kit</h1>
+	    <div className="buttons">
+	      <h2>Buttons</h2>
+	      <PrimaryButtons />
+	      <SecondaryButtons />
+	      <OutlineButtons />
+	    </div>
     </div>
   );
 };

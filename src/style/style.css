@@ -1,61 +1,85 @@
 @font-face {
-    font-family: Vazir;
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir.eot');
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir.woff2') format('woff2'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir.woff') format('woff'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir.ttf') format('truetype');
-    font-weight: normal;
+  font-family: Vazir;
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir.eot");
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir.woff2") format("woff2"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir.woff") format("woff"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir.ttf") format("truetype");
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: Vazir;
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.eot');
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.woff2') format('woff2'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.woff') format('woff'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Medium.ttf') format('truetype');
-    font-weight: 500;
+  font-family: Vazir;
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Medium.eot");
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Medium.woff2")
+      format("woff2"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Medium.woff") format("woff"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: Vazir;
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Black.eot');
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Black.eot?#iefix') format('embedded-opentype'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Black.woff2') format('woff2'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Black.woff') format('woff'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Black.ttf') format('truetype');
-    font-weight: 900;
+  font-family: Vazir;
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Black.eot");
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Black.woff2") format("woff2"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Black.woff") format("woff"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Black.ttf")
+      format("truetype");
+  font-weight: 900;
 }
 
 @font-face {
-    font-family: Vazir;
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Bold.eot');
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Bold.woff2') format('woff2'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Bold.woff') format('woff'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Bold.ttf') format('truetype');
-    font-weight: bold;
+  font-family: Vazir;
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Bold.eot");
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Bold.woff2") format("woff2"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Bold.woff") format("woff"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: Vazir;
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Light.eot');
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Light.eot?#iefix') format('embedded-opentype'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Light.woff2') format('woff2'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Light.woff') format('woff'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Light.ttf') format('truetype');
-    font-weight: 300;
+  font-family: Vazir;
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Light.eot");
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Light.woff2") format("woff2"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Light.woff") format("woff"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Light.ttf")
+      format("truetype");
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: Vazir;
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Thin.eot');
-    src: url('https://kamva-assets.ir/fonts/vazir/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Thin.woff2') format('woff2'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Thin.woff') format('woff'),
-    url('https://kamva-assets.ir/fonts/vazir/Vazir-Thin.ttf') format('truetype');
-    font-weight: 100;
+  font-family: Vazir;
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Thin.eot");
+  src: url("https://kamva-assets.ir/fonts/vazir/Vazir-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Thin.woff2") format("woff2"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Thin.woff") format("woff"),
+    url("https://kamva-assets.ir/fonts/vazir/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+
+:root {
+  --baseline: 1.5rem;
+  --gap: 1.5rem;
+  --h1FontSize: 5.063rem;
+  --h1LineHeight: 4;
+  --h2FontSize: 3.37rem;
+  --h2LineHeight: 3;
+  --h3FontSize: 2.25rem;
+  --space-1: 0.5rem; /*8px*/
+  --space-2: 1rem; /*16px*/
+  --space-3: 1.5rem; /*24px*/
+  --space-4: 2rem; /*32px*/
 }
 
 html,
@@ -64,17 +88,91 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  direction: rtl;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: var(--baseline);
   font-family: Vazir;
+  padding-top: var(--baseline);
 }
 
 * {
   margin: 0;
   padding: 0;
   position: relative;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/*html {*/
+  /*background-size: 1px 1.5rem;*/
+  /*background-image: linear-gradient(*/
+    /*rgba(0, 188, 212, 0.23) 1px,*/
+    /*transparent 0%,*/
+    /*transparent*/
+  /*);*/
+/*}*/
+
+.container {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: var(--h1FontSize);
+  line-height: calc(var(--h1LineHeight) * var(--baseline));
+  /*background-color: rgba(245, 255, 112, 0.42);*/
+  margin-bottom: var(--baseline);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.16);
+}
+
+h2 {
+  font-size: var(--h2FontSize);
+  line-height: calc(var(--h2LineHeight) * var(--baseline));
+  /*background-color: rgba(245, 255, 112, 0.42);*/
+  margin-bottom: var(--baseline);
+}
+
+h3 {
+  font-size: var(--h3FontSize);
+  line-height: calc(2 * var(--baseline));
+  /*background-color: rgba(245, 255, 112, 0.42);*/
+  margin-bottom: var(--baseline);
+}
+
+.primary,
+.secondary,
+.outline {
+  border: 1px solid rgba(1, 1, 1, 0.25);
+  margin-bottom: var(--space-3);
+}
+
+.primary,
+.secondary,
+.outline {
+  padding-top: var(--space-1);
+  padding-left: var(--space-1);
+  border-radius: 10px;
+}
+
+.primary div,
+.secondary div,
+.outline div {
+  display: flex;
+  align-items: center;
+  padding-bottom: var(--space-4);
+  min-height: calc(2 * var(--baseline));
+}
+.primary button,
+.secondary button,
+.outline button {
+  margin-right: 1rem;
 }

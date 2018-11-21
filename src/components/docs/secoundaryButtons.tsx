@@ -5,7 +5,7 @@ import { colorPallet } from "../../utils/style";
 export const SecondaryButtons = () => {
 	return (
 		<div className="buttons">
-			<div className="primary">
+			<div className="secondary">
 				<h3>Secondary</h3>
 				<div>
 					<Button secondary>شروع با کاموا</Button>
