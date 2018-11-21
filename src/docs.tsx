@@ -9,7 +9,7 @@ const Layout = () => {
     <div className="container">
       <div className="buttons">
         <h2>Buttons</h2>
-        <Button color={colorPallet.third}>شروع با کاموا</Button>
+        <Button color={colorPallet.third} disable={true}>شروع با کاموا</Button>
       </div>
     </div>
   );

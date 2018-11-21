@@ -16,6 +16,7 @@ export const PrimaryButton = styled(ResetButton)`
   color: #fff;
   color: #fff;
   font-weight: 900;
+
   background-color: ${props =>
     !props.color
       ? `rgba(${colorPallet.primary}, 1)`
@@ -27,6 +28,16 @@ export const PrimaryButton = styled(ResetButton)`
         ? `rgba(${colorPallet.primary}, 0.64)`
         : `rgba(${props.color}, 0.30)`};
 
+  ${props =>
+    props.disable &&
+    `background-color: ${
+      !props.color
+        ? `rgba(${colorPallet.primary}, 0.4)`
+        : `rgba(${props.color}, 0.4)`
+    }}`};
+
+  ${props => props.disable && `box-shadow: none; cursor: not-allowed`};
+  ${props => props.disable && `&:before {display: none;}`};
   &:before {
     content: "";
     position: absolute;

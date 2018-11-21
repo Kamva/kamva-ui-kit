@@ -8,6 +8,7 @@ interface IButtonProps {
   children?: Element | string;
   onClick?: () => any;
   color?: colorPallet;
+  disable?: true;
 }
 
 export const Button: React.SFC<IButtonProps> = props => {
