@@ -21,6 +21,9 @@ export const OutlineButtons = () => {
 						شروع با کاموا
 					</Button>
 				</div>
+				<div>
+					<Button color={colorPallet.third} outline circle>?</Button>
+				</div>
 			</div>
 		</div>
 	);

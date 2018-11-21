@@ -4,7 +4,7 @@ import { PrimaryButton } from "./primary";
 import { colorPallet } from "../../utils/style";
 
 export const Outline = styled(PrimaryButton)`
-	font-weight: 300;
+  font-weight: 300;
   color: ${props =>
     !props.color
       ? `rgba(${colorPallet.primary}, 1)`
@@ -12,5 +12,10 @@ export const Outline = styled(PrimaryButton)`
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(1, 1, 1, 0.16);
   ${props => props.disable && `box-shadow: none; cursor: not-allowed`};
-  &:before {display: none;}
+  &:before {
+    display: none;
+  }
+  ${props =>
+    props.circle &&
+    `border-radius: 50%; display: flex; justify-content: center; align-items: center;`};
 `;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const ResetButton = styled.button`
 	font-family: Vazir;
+	font-size: 1rem;
 	appearance: none;
 	outline: none;
   border: none;

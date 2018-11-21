@@ -11,6 +11,7 @@ interface IButtonProps {
   onClick?: () => any;
   color?: colorPallet;
   disable?: true;
+  circle?: boolean;
 }
 
 export const Button: React.SFC<IButtonProps> = props => {
