@@ -5,7 +5,6 @@ import { colorPallet } from "../../utils/style";
 export const PrimaryButtons = () => {
   return (
     <div className="buttons">
-      <h2>Buttons</h2>
       <div className="primary">
         <h3>Primary</h3>
         <div>
