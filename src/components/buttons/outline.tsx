@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { PrimaryButton } from "./primary";
-import { colorPallet } from "../../utils/style";
+import { colorPallet } from "../../types";
 
 export const Outline = styled(PrimaryButton)`
   font-weight: 300;

@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colorPallet } from "../../utils/style";
+import { colorPallet } from "../../types";
 import { ResetButton } from "./resetButton";
 
 export const PrimaryButton = styled(ResetButton)`
