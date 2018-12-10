@@ -1,6 +1,6 @@
 {
   "name": "@kamva/ui-kit",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "description": "## Installation ``` $ npm install --save-dev kamva-ui-kit ```",
   "main": "dist/index.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "build": "rollup -c rollup.config.js",
     "watch": "rollup -cw",
     "start": "rollup -cw & parcel serve/index.html --out-dir build",
+    "prepublish": "npm run build",
     "lint": "tslint --project ."
   },
   "keywords": [],

@@ -2,6 +2,8 @@ src
 docs
 .idea
 .cache
+build
+serve
 .rpt2_cache
 .prettierrc.js
 jest.config.js

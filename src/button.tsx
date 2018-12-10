@@ -8,24 +8,17 @@ export interface IButtonProps {
   children?: React.ReactNode;
   onClick?: () => any;
   color?: colorPallet;
-  disable?: true;
+  disable?: boolean;
   circle?: boolean;
+  className?: string;
 }
 
 export const Button: React.SFC<IButtonProps> = props => {
   const { secondary, outline, children, ...prop } = props as IButtonProps;
   if (secondary) {
-    return (
-      <div>
-        <Secondary {...prop}>{children}</Secondary>
-      </div>
-    );
+    return <Secondary {...prop}>{children}</Secondary>;
   } else if (outline) {
-    return (
-      <div>
-        <Outline {...prop}>{children}</Outline>
-      </div>
-    );
+    return <Outline {...prop}>{children}</Outline>;
   }
   return <PrimaryButton {...prop}>{children}</PrimaryButton>;
 };
