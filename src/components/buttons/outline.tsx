@@ -17,5 +17,5 @@ export const Outline = styled(PrimaryButton)`
   }
   ${props =>
     props.circle &&
-    `border-radius: 50%; display: flex; justify-content: center; align-items: center;`};
+    `border-radius: 50%; display: flex; justify-content: center; align-items: center; padding: 0.5rem;`};
 `;

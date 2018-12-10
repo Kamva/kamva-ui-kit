@@ -2,6 +2,7 @@ src
 docs
 .idea
 .cache
+.rpt2_cache
 .prettierrc.js
 jest.config.js
 tsconfig.json
