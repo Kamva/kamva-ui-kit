@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-$ npm install --save-dev kamva-ui-kit
+$ npm install --save-dev @kamva/ui-kit
 ```
 
 ## buttons
@@ -18,9 +18,9 @@ import { Button } from "@kamva/ui-kit";
 
 const Example = () => {
   return (
-  <Button>primary</Button>
-  <Button secondary>secondary button</Button>
-  <Button outline>outline button</Button>
+      <Button>primary</Button>
+      <Button secondary>secondary button</Button>
+      <Button outline>outline button</Button>
   ) ;
 }
 ```
