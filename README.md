@@ -14,13 +14,13 @@ example:
 
 ```jsx
 import React from "react";
-import { Button } from "@kamva/ui-kit";
+import { Button, PrimaryButton } from "@kamva/ui-kit";
 
 const Example = () => {
   return (
       <Button>primary</Button>
-      <Button secondary>secondary button</Button>
-      <Button outline>outline button</Button>
+      <PrimaryButton secondary>secondary button</Button>
+      <PrimaryButton round>?</Button>
   ) ;
 }
 ```
