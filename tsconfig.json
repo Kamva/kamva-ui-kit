@@ -1,10 +1,15 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es5",
     "outDir": "./dist",
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "jsx": "react",
-    "declaration": true
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": false
   },
-  "include": ["src/index.tsx"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/__tests__/*"]
 }
