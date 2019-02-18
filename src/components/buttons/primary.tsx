@@ -30,6 +30,8 @@ const PrimaryButton = styled("button")<IPrimaryBtnProps>`
     fill: ${props =>
       props.fontColor ? props.fontColor : props.defaultFontColor};
   }
+
+  }
   &:hover,
   &:focus {
     background-color: ${props =>
@@ -62,7 +64,7 @@ export const Button: React.SFC<
     return (
       <Fragment>
         <PrimaryButton
-          defaultFontColor={colorPallet.secondaryButtonColor}
+          defaultFontColor={colorPallet.primaryButtonColor}
           defaultColor={colorPallet.secondary}
           {...prop}
         />
