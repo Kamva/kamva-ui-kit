@@ -15,9 +15,11 @@ const StyledLabel = styled("label")`
 
 interface IStyledInput {
   error?: boolean;
+  ltr?: boolean;
 }
 
 const StyledInput = styled("input")<IStyledInput>`
+  direction: ${props => (props.ltr ? "ltr" : "rtl")};
   min-width: ${rem(376)};
   border: 1px solid;
   border-color: ${props => (props.error ? colorPallet.secondary : "#F0F0F0")};
@@ -34,6 +36,7 @@ interface IInput {
   id: string;
   label?: string;
   error?: boolean;
+  ltr?: boolean;
 }
 export const Input: React.SFC<
   IInput | React.HTMLProps<HTMLInputElement>
