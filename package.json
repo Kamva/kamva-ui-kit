@@ -1,13 +1,13 @@
 {
   "name": "@kamva/ui-kit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "## Installation ``` $ npm install --save-dev kamva-ui-kit ```",
   "main": "dist/index.js",
   "scripts": {
     "test": "NODE_ENV=test jest",
     "build": "rollup -c rollup.config.js",
     "watch": "rollup -cw",
-    "start": "rollup -cw & parcel serve/index.html --out-dir build",
+    "start": "parcel serve/index.html --out-dir build",
     "prepublish": "npm run build",
     "lint": "tslint --project ."
   },
@@ -43,6 +43,7 @@
     "typescript": "^3.3.3"
   },
   "dependencies": {
+    "polished": "^3.0.0",
     "styled-components": "^4.1.2"
   },
   "prettier": {

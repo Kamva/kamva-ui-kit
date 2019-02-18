@@ -1,2 +1,3 @@
-export * from './button';
-export * from './types';
+export * from "./components/buttons/primary";
+export * from "./components/buttons/secondary";
+export * from "./types";
