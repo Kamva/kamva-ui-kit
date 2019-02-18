@@ -34,6 +34,22 @@ const StyledInput = styled("input")<IStyledInput>`
       props.error ? colorPallet.secondary : colorPallet.primary};
   }
 `;
+
+const StyledTextArea = styled("textarea")<IStyledInput>`
+  direction: ${props => (props.ltr ? "ltr" : "rtl")};
+  min-width: ${rem(376)};
+  border: 1px solid;
+  border-color: ${props => (props.error ? colorPallet.secondary : "#F0F0F0")};
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: ${rem("5px")};
+  transition: border-color 0.3s ease-in-out;
+  &:focus {
+    border-color: ${props =>
+      props.error ? colorPallet.secondary : colorPallet.primary};
+  }
+`;
+
 interface IInput {
   id: string;
   label?: string;
@@ -50,6 +66,24 @@ export const Input: React.SFC<
         <StyledLabel htmlFor={id}>
           <span>{label}</span>
           <StyledInput id={id} {...prop} className="ui-kit" />
+        </StyledLabel>
+        <GlobalStyle />
+      </Fragment>
+    );
+  }
+  return <StyledInput id={id} {...prop} />;
+};
+
+export const TextArea: React.SFC<
+  IInput | React.HTMLProps<HTMLTextAreaElement>
+> = props => {
+  const { label, id, ...prop } = props as IInput;
+  if (label) {
+    return (
+      <Fragment>
+        <StyledLabel htmlFor={id}>
+          <span>{label}</span>
+          <StyledTextArea id={id} {...prop} className="ui-kit" />
         </StyledLabel>
         <GlobalStyle />
       </Fragment>
