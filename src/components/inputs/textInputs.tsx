@@ -7,10 +7,12 @@ import { rem } from "polished";
 import { colorPallet } from "../../types";
 
 const StyledLabel = styled("label")`
-  display: block;
   font-size: ${ms(0)};
-  margin-bottom: 0.5rem;
   font-weight: bold;
+  span {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 `;
 
 interface IStyledInput {
@@ -45,11 +47,13 @@ export const Input: React.SFC<
   if (label) {
     return (
       <Fragment>
-        <StyledLabel htmlFor={id}>{label}</StyledLabel>
-        <StyledInput id={id} {...prop} />
+        <StyledLabel htmlFor={id}>
+          <span>{label}</span>
+          <StyledInput id={id} {...prop} className="ui-kit" />
+        </StyledLabel>
         <GlobalStyle />
       </Fragment>
     );
   }
-  return <input id={id} {...prop} />;
+  return <StyledInput id={id} {...prop} />;
 };
