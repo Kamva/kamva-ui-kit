@@ -1,5 +1,8 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { Button } from "../dist";
+import { Input } from "../src";
 
-render(<Button>شروع با کاموا</Button>, document.getElementById("root"));
+render(
+  <Input id={"input"} label={"عنوان"} placeholder={"متن آزمایشی ..."} />,
+  document.getElementById("root"),
+);
