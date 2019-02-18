@@ -10,7 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     width: auto;
-      
+    cursor: pointer;
+    
     &:hover,
     &:focus {
       border: none;
@@ -21,5 +22,8 @@ export const GlobalStyle = createGlobalStyle`
       border: 0;
       padding: 0;
     }
+  }
+  * {
+    box-sizing: border-box;
   }
 `;
