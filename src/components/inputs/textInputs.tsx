@@ -24,14 +24,20 @@ const StyledInput = styled("input")<IStyledInput>`
   direction: ${props => (props.ltr ? "ltr" : "rtl")};
   min-width: ${rem(376)};
   border: 1px solid;
-  border-color: ${props => (props.error ? colorPallet.secondary : "#F0F0F0")};
+  border-color: ${props =>
+    props.error ? colorPallet.secondary : colorPallet.borderColor};
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: ${rem("5px")};
-  transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.2s ease-in-out;
+  background-color: ${colorPallet.boxBackgroundColor};
+  ::placeholder {
+    color: #a4a4a4;
+  }
   &:focus {
     border-color: ${props =>
       props.error ? colorPallet.secondary : colorPallet.primary};
+    background-color: #fff;
   }
 `;
 
@@ -39,14 +45,21 @@ const StyledTextArea = styled("textarea")<IStyledInput>`
   direction: ${props => (props.ltr ? "ltr" : "rtl")};
   min-width: ${rem(376)};
   border: 1px solid;
-  border-color: ${props => (props.error ? colorPallet.secondary : "#F0F0F0")};
+  border-color: ${props =>
+    props.error ? colorPallet.secondary : colorPallet.borderColor};
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: ${rem("5px")};
-  transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.2s ease-in-out;
+  background-color: ${colorPallet.boxBackgroundColor};
+
+  ::placeholder {
+    color: #a4a4a4;
+  }
   &:focus {
     border-color: ${props =>
       props.error ? colorPallet.secondary : colorPallet.primary};
+    background-color: #fff;
   }
 `;
 

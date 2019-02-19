@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
     }
   }
+  textarea,
   input {
     font-family: inherit;
     outline: none;
