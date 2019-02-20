@@ -1,8 +1,6 @@
 import * as React from "react";
 import { render } from "react-dom";
 import { TextArea } from "../src";
+import { H1 } from "../src";
 
-render(
-  <TextArea id={"input"} label={"عنوان"} placeholder={"متن آزمایشی ..."} />,
-  document.getElementById("root"),
-);
+render(<H1>سلام</H1>, document.getElementById("root"));
