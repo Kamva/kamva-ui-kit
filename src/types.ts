@@ -5,4 +5,6 @@ export enum colorPallet {
   secondaryButtonColor = "#fff",
   borderColor = "#bfbfbf",
   boxBackgroundColor = "#f0f0f0",
+  black = "#000000",
+  subText = "#A4A4A4",
 }
