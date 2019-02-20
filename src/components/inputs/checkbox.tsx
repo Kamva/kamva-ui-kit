@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { SvgActive } from "./icons";
 import { colorPallet } from "../../types";
 import { darken, rem } from "polished";
+import { GlobalStyle } from "../../GlobalStyle";
 
 interface ICheckBox {
   id: string;
@@ -47,13 +48,15 @@ const StyledLabel = styled("label")`
 
 export const CheckBox: React.SFC<
   ICheckBox | React.HTMLProps<HTMLInputElement>
-> = ({ id }) => {
+> = props => {
+  const { id, ...prop } = props as ICheckBox;
   return (
     <React.Fragment>
-      <StyledCheckbox type="checkbox" id={id} />
+      <StyledCheckbox type="checkbox" id={id} {...prop} />
       <StyledLabel htmlFor={id}>
         <SvgActive />
       </StyledLabel>
+      <GlobalStyle />
     </React.Fragment>
   );
 };
