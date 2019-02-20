@@ -69,3 +69,9 @@ const Example = () => (
   </div>
 );
 ```
+
+## CheckBox Props
+
+| props | type             | default |
+| ----- | ---------------- | ------- |
+| id    | string. required | null    |
