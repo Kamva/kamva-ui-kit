@@ -12,6 +12,9 @@ export const StyledCheckbox = styled("input")`
   &[type="checkbox"] {
     display: none;
   }
+  & + label svg {
+    display: none;
+  }
   &[type="checkbox"] + label {
     display: flex;
     align-items: center;
@@ -28,6 +31,9 @@ export const StyledCheckbox = styled("input")`
   }
   &[type="checkbox"]:checked + label:before {
     background-color: ${colorPallet.primary};
+  }
+  &[type="checkbox"]:checked + label svg {
+    display: block;
   }
   &[type="checkbox"]:checked:hover + label:before {
     background-color: ${colorPallet.primary};
