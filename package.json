@@ -1,6 +1,6 @@
 {
   "name": "@kamva/ui-kit",
-  "version": "0.2.5",
+  "version": "0.2.5-alpha-01",
   "description": "## Installation ``` $ npm install --save-dev kamva-ui-kit ```",
   "main": "dist/index.js",
   "scripts": {

@@ -47,7 +47,7 @@ export const StyledCheckbox = styled("input")`
 const StyledLabel = styled("label")`
   svg {
     position: relative;
-    right: -${rem("22.5px")};
+    right: -${rem("20.9px")};
     fill: #fff;
   }
 `;
