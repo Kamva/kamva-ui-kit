@@ -38,8 +38,10 @@ const Secondary = styled("button")<ISecondaryProps>`
   &[disabled] {
     cursor: not-allowed;
     color: ${props =>
-      props.color ? rgba(props.color, 0.3) : rgba(props.defaultColor, 0.3)};
-    opacity: 0.9;
+      props.color ? rgba(props.color, 0.1) : rgba(props.defaultColor, 0.1)};
+    background-color: ${props =>
+      props.color ? rgba(props.color, 0.1) : rgba(props.defaultColor, 0.1)};
+    opacity: 0.7;
   }
   ${props =>
     props.round &&
