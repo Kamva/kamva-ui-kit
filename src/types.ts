@@ -8,3 +8,11 @@ export enum colorPallet {
   black = "#000000",
   subText = "#A4A4A4",
 }
+
+export interface IHeadingProps {
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  margin?: string;
+  padding?: string;
+}

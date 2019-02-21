@@ -1,5 +1,5 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { SubText } from "../src";
+import { H1 } from "../src";
 
-render(<SubText>سلام</SubText>, document.getElementById("root"));
+render(<H1>سلام</H1>, document.getElementById("root"));
