@@ -9,4 +9,5 @@ export * from "./components/H4";
 export * from "./components/H5";
 export * from "./components/H6";
 export * from "./components/subText";
+export * from "./components/p";
 export * from "./types";

@@ -16,3 +16,11 @@ export interface IHeadingProps {
   margin?: string;
   padding?: string;
 }
+
+export interface IParagraphProps {
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  margin?: string;
+  padding?: string;
+}
