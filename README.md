@@ -75,3 +75,44 @@ const Example = () => (
 | props | type             | default |
 | ----- | ---------------- | ------- |
 | id    | string. required | null    |
+
+## Alert
+
+its just wrapper for [react-alert](https://github.com/schiehll/react-alert#readme)
+| props | type | default |
+| ----- | ---------------- | ------------------------------------------- |
+| optionsReactAlert | [options](https://github.com/schiehll/react-alert#options) | defaultOption |
+
+### default options
+
+`const providerOptions = { position: positions.TOP_CENTER, timeout: 3000, offset: "24px", transition: transitions.fade, };`
+
+## usage
+
+```jsx
+import React from "react";
+import { AppAlert, useAlert } from "@kamva/ui-kit";
+
+const App = () => {
+  const alert = useAlert();
+
+  return (
+    <div>
+      <button
+        onClick={() => {
+          alert.error(<p>عملیات با موفقیت انجام شد</p>);
+        }}
+      >
+        Show Alert
+      </button>
+    </div>
+  );
+};
+
+render(
+  <AppAlert>
+    <App />
+  </AppAlert>,
+  document.getElementById("root"),
+);
+```

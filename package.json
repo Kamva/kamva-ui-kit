@@ -1,6 +1,6 @@
 {
   "name": "@kamva/ui-kit",
-  "version": "0.2.5-alpha-01",
+  "version": "0.2.5-alpha-02",
   "description": "## Installation ``` $ npm install --save-dev kamva-ui-kit ```",
   "main": "dist/index.js",
   "scripts": {
@@ -44,6 +44,9 @@
   },
   "dependencies": {
     "polished": "^3.0.0",
+    "react-alert": "^5.1.0",
+    "react-alert-template-basic": "^1.0.0",
+    "react-transition-group": "^2.5.3",
     "styled-components": "^4.1.2"
   },
   "prettier": {

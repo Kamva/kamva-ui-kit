@@ -10,4 +10,5 @@ export * from "./components/H5";
 export * from "./components/H6";
 export * from "./components/subText";
 export * from "./components/p";
+export * from "./components/Alert";
 export * from "./types";
