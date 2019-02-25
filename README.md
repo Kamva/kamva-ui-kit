@@ -86,7 +86,14 @@ its just wrapper for [react-alert](https://github.com/schiehll/react-alert#readm
 
 ### default options
 
-`const providerOptions = { position: positions.TOP_CENTER, timeout: 3000, offset: "24px", transition: transitions.fade, };`
+```javascript 
+const providerOptions = {
+  position: positions.TOP_CENTER,
+  timeout: 3000,
+  offset: "24px",
+  transition: transitions.fade
+};
+```
 
 ## usage
 
