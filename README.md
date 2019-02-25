@@ -79,6 +79,7 @@ const Example = () => (
 ## Alert
 
 its just wrapper for [react-alert](https://github.com/schiehll/react-alert#readme)
+
 | props | type | default |
 | ----- | ---------------- | ------------------------------------------- |
 | optionsReactAlert | [options](https://github.com/schiehll/react-alert#options) | defaultOption |
