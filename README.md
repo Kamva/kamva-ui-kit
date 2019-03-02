@@ -25,12 +25,13 @@ const Example = () => {
 
 ## Input Props
 
-| props | type             | default                                     |
-| ----- | ---------------- | ------------------------------------------- |
-| id    | string. required | null                                        |
-| label | string           | null. if its passed render label with input |
-| error | boolean          | false. if will be true border color changes |
-| ltr   | boolean          | false.                                      |
+| props    | type             | default                                     |
+| -------- | ---------------- | ------------------------------------------- |
+| id       | string. required | null                                        |
+| label    | string           | null. if its passed render label with input |
+| isError  | boolean          | false. if will be true border color changes |
+| errorMsg | string OR null   | false. if will be true border color changes |
+| ltr      | boolean          | false.                                      |
 
 ## 💡 Fomrik example:
 
@@ -80,18 +81,18 @@ const Example = () => (
 
 its just wrapper for [react-alert](https://github.com/schiehll/react-alert#readme)
 
-| props | type | default |
-| ----- | ---------------- | ------------------------------------------- |
+| props             | type                                                       | default       |
+| ----------------- | ---------------------------------------------------------- | ------------- |
 | optionsReactAlert | [options](https://github.com/schiehll/react-alert#options) | defaultOption |
 
 ### default options
 
-```javascript 
+```javascript
 const providerOptions = {
   position: positions.TOP_CENTER,
   timeout: 3000,
   offset: "24px",
-  transition: transitions.fade
+  transition: transitions.fade,
 };
 ```
 

@@ -41,8 +41,14 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
 
-    &:focus {
+    &:hover,
+    &:focus,
+    &:active {
       outline: 0;
+     -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    &:-webkit-autofill {
+    -webkit-text-fill-color: yellow !important;
     }
   }
   textarea,

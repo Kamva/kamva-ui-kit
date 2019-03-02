@@ -9,6 +9,7 @@ import { colorPallet } from "../../types";
 const StyledLabel = styled("label")`
   font-size: ${ms(0)};
   font-weight: bold;
+  position: relative;
   span {
     display: block;
     margin-bottom: 0.5rem;
@@ -18,6 +19,7 @@ const StyledLabel = styled("label")`
 interface IStyledInput {
   error?: boolean;
   ltr?: boolean;
+  isError: boolean;
 }
 
 const StyledInput = styled("input")<IStyledInput>`
@@ -31,6 +33,7 @@ const StyledInput = styled("input")<IStyledInput>`
   border-radius: ${rem("5px")};
   transition: border-color 0.3s ease-in-out, background-color 0.2s ease-in-out;
   background-color: ${colorPallet.boxBackgroundColor};
+  border-color: ${props => props.isError && "red"};
   ::placeholder {
     color: #a4a4a4;
   }
@@ -38,10 +41,16 @@ const StyledInput = styled("input")<IStyledInput>`
     border-color: ${props =>
       props.error ? colorPallet.secondary : colorPallet.primary};
     background-color: #fff;
+    border-color: ${props => props.isError && "red"};
   }
 `;
 
-const StyledTextArea = styled("textarea")<IStyledInput>`
+interface IStyledTextArea {
+  error?: boolean;
+  ltr?: boolean;
+}
+
+const StyledTextArea = styled("textarea")<IStyledTextArea>`
   direction: ${props => (props.ltr ? "ltr" : "rtl")};
   min-width: ${rem(376)};
   border: 1px solid;
@@ -63,28 +72,39 @@ const StyledTextArea = styled("textarea")<IStyledInput>`
   }
 `;
 
+const ErrorMsg = styled("span")`
+  position: absolute;
+  left: 0;
+  top: -2.5rem;
+  color: red;
+  font-size: 14px;
+`;
+
 interface IInput {
   id: string;
   label?: string;
   error?: boolean;
   ltr?: boolean;
+  isError?: boolean;
+  errorMsg?: null | string;
 }
 export const Input: React.SFC<
   IInput | React.HTMLProps<HTMLInputElement>
 > = props => {
-  const { label, id, ...prop } = props as IInput;
+  const { label, id, isError, errorMsg, ...prop } = props as IInput;
   if (label) {
     return (
       <Fragment>
         <StyledLabel htmlFor={id}>
           <span>{label}</span>
-          <StyledInput id={id} {...prop} className="ui-kit" />
+          {isError && errorMsg && <ErrorMsg>{errorMsg}</ErrorMsg>}
+          <StyledInput id={id} {...prop} isError={isError} className="ui-kit" />
         </StyledLabel>
         <GlobalStyle />
       </Fragment>
     );
   }
-  return <StyledInput id={id} {...prop} />;
+  return <StyledInput isError={isError} id={id} {...prop} />;
 };
 
 export const TextArea: React.SFC<
@@ -102,5 +122,5 @@ export const TextArea: React.SFC<
       </Fragment>
     );
   }
-  return <StyledInput id={id} {...prop} />;
+  return <StyledTextArea id={id} {...prop} />;
 };
