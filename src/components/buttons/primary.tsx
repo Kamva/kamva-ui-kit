@@ -13,6 +13,8 @@ interface IPrimaryBtnProps {
 }
 
 const PrimaryButton = styled("button")<IPrimaryBtnProps>`
+  display: flex;
+  align-items: center;
   padding: 1rem 1.5rem;
   border-radius: ${rem("45px")};
   letter-spacing: 0.5px;
@@ -34,7 +36,7 @@ const PrimaryButton = styled("button")<IPrimaryBtnProps>`
   }
   img {
     width: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     filter: ${colorPallet.whiteFilter};
   }
   &:hover,
@@ -50,6 +52,9 @@ const PrimaryButton = styled("button")<IPrimaryBtnProps>`
       props.fontColor
         ? rgba(props.fontColor, 0.3)
         : rgba(props.defaultFontColor, 0.3)};
+    img {
+      opacity: 0.3;
+    }
   }
 `;
 

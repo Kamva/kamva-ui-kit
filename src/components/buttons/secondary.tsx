@@ -60,6 +60,9 @@ const Secondary = styled("button")<ISecondaryProps>`
       letter-spacing: 0px;
       box-shadow: none;
     `}
+  img {
+    margin: ${props => props.round && 0} !important;
+  }
 `;
 
 interface ISecondaryButtonProps {
