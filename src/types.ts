@@ -8,9 +8,9 @@ export enum colorPallet {
   black = "#000000",
   subText = "#A4A4A4",
   primaryFilter = "invert(55%) sepia(57%) saturate(4534%) hue-rotate(209deg) brightness(100%) contrast(102%)",
-  primaryFilterHover = "invert(13%) sepia(100%) saturate(3645%) hue-rotate(230deg) brightness(111%) contrast(120%)",
   secondaryFilter = "invert(83%) sepia(29%) saturate(7234%) hue-rotate(310deg) brightness(100%) contrast(101%)",
-  secondaryFilterHover = "invert(83%) sepia(29%) saturate(7234%) hue-rotate(310deg) brightness(100%) contrast(101%)",
+  primaryFilterHover = "invert(13%) sepia(100%) saturate(3645%) hue-rotate(230deg) brightness(111%) contrast(120%)",
+  secondaryFilterHover = "invert(30%) sepia(87%) saturate(6434%) hue-rotate(351deg) brightness(111%) contrast(112%)",
   whiteFilter = "invert(99%) sepia(45%) saturate(0%) hue-rotate(56deg) brightness(108%) contrast(100%)",
 }
 
