@@ -1,6 +1,6 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { AppAlert, Input, useAlert } from "../src";
+import { AppAlert, Button, Input, SecondaryButton, useAlert } from "../src";
 
 const App = () => {
   const alert = useAlert();
@@ -15,13 +15,7 @@ const App = () => {
         Show Alert
       </button>
       <br />
-      <Input
-        id="er"
-        isError={true}
-        errorMsg="این فیلد به درستی پر نشده است."
-        type="search"
-        label="name"
-      />
+      <Button>سلام</Button>
     </div>
   );
 };

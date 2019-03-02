@@ -32,6 +32,11 @@ const PrimaryButton = styled("button")<IPrimaryBtnProps>`
   }
 
   }
+  img {
+    width: 1.5rem;
+    margin-left: 1rem;
+    filter: ${colorPallet.whiteFilter};
+  }
   &:hover,
   &:focus {
     background-color: ${props =>

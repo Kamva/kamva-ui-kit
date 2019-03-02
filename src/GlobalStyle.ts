@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { colorPallet } from "./types";
 
 export const GlobalStyle = createGlobalStyle`
   button {
@@ -64,5 +65,32 @@ export const GlobalStyle = createGlobalStyle`
   }
   * {
     box-sizing: border-box;
+  }
+  
+  .button_prColor {
+    img {
+      width: 1.5rem;
+      margin-left: 1rem;
+      filter: ${colorPallet.primaryFilter};
+    }
+    &:hover,
+    &:focus {
+       img {
+        filter: ${colorPallet.primaryFilterHover};
+       }
+    }
+  }
+  .button_scColor {
+    img {
+      width: 1.5rem;
+      margin-left: 1rem;
+      filter: ${colorPallet.secondaryFilter};
+    }
+    &:hover,
+    &:focus {
+       img {
+        filter: ${colorPallet.secondaryFilterHover};
+       }
+    }
   }
 `;

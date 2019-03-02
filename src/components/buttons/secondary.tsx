@@ -74,14 +74,22 @@ export const SecondaryButton: React.SFC<
   if (secondary) {
     return (
       <Fragment>
-        <Secondary defaultColor={colorPallet.secondary} {...prop} />
+        <Secondary
+          className="sc__button_scColor"
+          defaultColor={colorPallet.secondary}
+          {...prop}
+        />
         <GlobalStyle />
       </Fragment>
     );
   }
   return (
     <Fragment>
-      <Secondary defaultColor={colorPallet.primary} {...prop} />
+      <Secondary
+        className="sc__button_prColor"
+        defaultColor={colorPallet.primary}
+        {...prop}
+      />
       <GlobalStyle />
     </Fragment>
   );
