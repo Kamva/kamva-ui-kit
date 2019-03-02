@@ -25,8 +25,8 @@ const Secondary = styled("button")<ISecondaryProps>`
   box-shadow: ${props =>
     props.boxShadow
       ? props.color
-        ? `box-shadow: 0 4px 6px ${rgba(props.color, 0.3)}`
-        : `box-shadow: 0 4px 6px ${rgba(props.defaultColor, 0.3)}`
+        ? `0 4px 6px ${rgba(props.color, 0.3)}`
+        : `0 4px 6px ${rgba(props.defaultColor, 0.3)}`
       : 0};
 
   svg {
