@@ -15,7 +15,7 @@ const App = () => {
         Show Alert
       </button>
       <br />
-      <Button>سلام</Button>
+      <SecondaryButton boxShadow={false}>سلام</SecondaryButton>
     </div>
   );
 };

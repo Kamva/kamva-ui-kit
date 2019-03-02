@@ -10,6 +10,7 @@ interface ISecondaryProps {
   fontColor?: string;
   fontWeight?: string;
   round?: boolean;
+  boxShadow?: boolean;
 }
 
 const Secondary = styled("button")<ISecondaryProps>`
@@ -22,9 +23,12 @@ const Secondary = styled("button")<ISecondaryProps>`
     props.color ? rgba(props.color, 0.1) : rgba(props.defaultColor, 0.1)};
   color: ${props => (props.color ? props.color : props.defaultColor)};
   box-shadow: ${props =>
-    props.color
-      ? `0 4px 6px ${rgba(props.color, 0.3)}`
-      : `0 4px 6px ${rgba(props.defaultColor, 0.3)}`};
+    props.boxShadow
+      ? props.color
+        ? `box-shadow: 0 4px 6px ${rgba(props.color, 0.3)}`
+        : `box-shadow: 0 4px 6px ${rgba(props.defaultColor, 0.3)}`
+      : 0};
+
   svg {
     fill: ${props => (props.color ? props.color : props.defaultColor)};
   }
@@ -65,18 +69,20 @@ interface ISecondaryButtonProps {
   fontColor?: string;
   fontWeight?: string;
   round?: boolean;
+  boxShadow?: boolean;
 }
 
 export const SecondaryButton: React.SFC<
   ISecondaryButtonProps | React.HTMLProps<HTMLButtonElement>
 > = props => {
-  const { secondary, ...prop } = props as ISecondaryButtonProps;
+  const { secondary, boxShadow, ...prop } = props as ISecondaryButtonProps;
   if (secondary) {
     return (
       <Fragment>
         <Secondary
           className="sc__button_scColor"
           defaultColor={colorPallet.secondary}
+          boxShadow={boxShadow}
           {...prop}
         />
         <GlobalStyle />
@@ -88,9 +94,14 @@ export const SecondaryButton: React.SFC<
       <Secondary
         className="sc__button_prColor"
         defaultColor={colorPallet.primary}
+        boxShadow={boxShadow}
         {...prop}
       />
       <GlobalStyle />
     </Fragment>
   );
+};
+
+SecondaryButton.defaultProps = {
+  boxShadow: true,
 };
