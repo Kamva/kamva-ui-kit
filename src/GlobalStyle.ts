@@ -42,7 +42,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
 
-    &:hover,
     &:focus,
     &:active {
       outline: 0;
@@ -54,7 +53,6 @@ export const GlobalStyle = createGlobalStyle`
   input[type="button"],
   input[type="submit"] {
    -webkit-appearance: none;
-   border-radius: 0;
   }
   label {
     margin: 0;

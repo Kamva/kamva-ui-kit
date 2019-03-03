@@ -43,6 +43,7 @@
     "typescript": "^3.3.3"
   },
   "dependencies": {
+    "@types/react-text-mask": "^5.4.4",
     "polished": "^3.0.0",
     "react-alert": "^5.1.0",
     "react-alert-template-basic": "^1.0.0",

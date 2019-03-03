@@ -2,6 +2,7 @@ export * from "./components/buttons/primary";
 export * from "./components/buttons/secondary";
 export * from "./components/inputs/textInputs";
 export * from "./components/inputs/checkbox";
+export * from "./components/inputs/maskInput";
 export * from "./components/H1";
 export * from "./components/H2";
 export * from "./components/H3";

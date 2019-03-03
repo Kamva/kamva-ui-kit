@@ -1,27 +1,33 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { AppAlert, Button, Input, SecondaryButton, useAlert } from "../src";
+import { InputMask, Input } from "../src";
 
-const App = () => {
-  const alert = useAlert();
-
-  return (
-    <div>
-      <button
-        onClick={() => {
-          alert.error(<p>عملیات با موفقیت انجام شد</p>);
-        }}
-      >
-        Show Alert
-      </button>
-      <br />
-      <SecondaryButton boxShadow={false}>سلام</SecondaryButton>
-    </div>
-  );
-};
 render(
-  <AppAlert>
-    <App />
-  </AppAlert>,
+  <div>
+    <InputMask
+      type={"text"}
+      name="name"
+      placeholder="name"
+      id="name"
+      label={"Masked Inpt"}
+      mask={[
+        "(",
+        /[1-9]/,
+        /\d/,
+        /\d/,
+        ")",
+        " ",
+        /\d/,
+        /\d/,
+        /\d/,
+        "-",
+        /\d/,
+        /\d/,
+        /\d/,
+        /\d/,
+      ]}
+    />
+    <Input type={"text"} name="vvv" placeholder="vvv" id="vvv" label={"vvv"} />
+  </div>,
   document.getElementById("root"),
 );
