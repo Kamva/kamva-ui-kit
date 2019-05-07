@@ -26,6 +26,7 @@ interface IStyledInput {
 const StyledInput = styled("input")<IStyledInput>`
   direction: ${props => (props.ltr ? "ltr" : "rtl")};
   min-width: ${rem(376)};
+  min-height: ${rem(44)};
   border: 1px solid;
   border-color: ${props =>
     props.error ? colorPallet.secondary : colorPallet.borderColor};
